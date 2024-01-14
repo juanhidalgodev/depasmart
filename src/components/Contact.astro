@@ -1,0 +1,128 @@
+---
+import "../styles/contact.css";
+---
+
+<section id="contact">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Contáctanos</span>
+      <h2 class="cs-title"></h2>
+    </div>
+    <div class="cs-contact-group">
+      <p class="cs-text">
+        Vive en un departamento a una cuadra del metropolitano y a 5 minutos de
+        las principales avenidas, en un lugar centrico.
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="https://cdn.clouds.pe/cloudspe/landing/depa-smart/Icons/phone-yellow.svg"
+              alt="phone icon"
+              class="cs-icon"
+              width="40"
+              height="40"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Teléfono</span>
+            <a href="tel:+51993109680
+                        " class="cs-link"
+              >+51 993 109 680
+            </a>
+          </div>
+        </li>
+        <li class="cs-li">
+          <picture class="cs-icon-wrapper">
+            <img
+              aria-hidden="true"
+              src="https://cdn.clouds.pe/cloudspe/landing/depa-smart/Icons/pin-yellow.svg"
+              alt="address icon"
+              class="cs-icon"
+              width="40"
+              height="40"
+              decoding="async"
+            />
+          </picture>
+          <div class="cs-flex-group">
+            <span class="cs-header">Dirección</span>
+            <a href="mailto:Email@stitch.com" class="cs-link"
+              >Jr. Manuel Candamo 820, Lince.</a
+            >
+          </div>
+        </li>
+      </ul>
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="https://cdn.clouds.pe/cloudspe/landing/depa-smart/Images/Buildings/depasmart-08.png"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="https://cdn.clouds.pe/cloudspe/landing/depa-smart/Images/Buildings/depasmart-08.png"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://cdn.clouds.pe/cloudspe/landing/depa-smart/Images/Buildings/depasmart-08.png"
+          alt="wind turbine"
+          width="650"
+          height="613"
+        />
+      </picture>
+    </div>
+    <form class="cs-form" id="cs-form" name="Contact Form" method="post">
+      <label class="cs-label">
+        Nombre
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nombre"
+        />
+      </label>
+      <label class="cs-label cs-email">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="cs-label cs-phone">
+        Teléfono
+        <input
+          class="cs-input"
+          required
+          type="number"
+          id="phone"
+          name="phone"
+          placeholder="Teléfono"
+        />
+      </label>
+      <label class="cs-label">
+        Mensaje
+        <textarea
+          class="cs-input cs-textarea"
+          required
+          name="Message"
+          id="message"
+          placeholder="Escribir mensaje..."></textarea>
+      </label>
+      <button class="cs-button-solid cs-submit" id="cs-button" type="submit"
+        >Enviar mensaje</button
+      >
+    </form>
+  </div>
+</section>
+
+<script>
+  import "../scripts/contact.js";
+</script>

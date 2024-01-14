@@ -1,0 +1,299 @@
+@media only screen and (min-width: 0rem) {
+    #benefits-title {
+        text-align: center;
+        padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
+        padding-bottom: clamp(12.125rem, 30.95vw, 28.125rem);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    #benefits-title:before {
+        content: "";
+        width: 31.25rem;
+        height: 250rem;
+        background: #fff;
+        opacity: 1;
+        transform: rotate(-67deg);
+        transform-origin: center;
+        position: absolute;
+        display: block;
+        bottom: -139.6875rem;
+        right: 50%;
+        z-index: 0;
+    }
+    #benefits-title:after {
+        content: "";
+        width: 31.25rem;
+        height: 250rem;
+        background: #fff;
+        opacity: 1;
+        transform: rotate(67deg);
+        transform-origin: center;
+        position: absolute;
+        display: block;
+        bottom: -139.6875rem;
+        left: 50%;
+        z-index: 0;
+    }
+    #benefits-title .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    #benefits-title .cs-background:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.7;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+    #benefits-title .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #benefits-title .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+    }
+    #benefits-title .cs-title {
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 51.8125rem;
+        margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+        color: #fff;
+        position: relative;
+    }
+    #benefits-title .cs-title:after {
+        content: "";
+        width: clamp(3.75rem, 9.5vw, 6.25rem);
+        height: clamp(0.25rem, 0.8vw, 0.5rem);
+        margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+        background: var(--primary);
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+    #benefits-title .cs-text {
+        font-size: clamp(1rem, 1.95vw, 1.5625rem);
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        max-width: clamp(29rem, 60vw, 50rem);
+        margin: 0 auto;
+        margin-bottom: clamp(2.5rem, 4vw, 3rem);
+        color: #fff;
+    }
+    #benefits-title .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        margin: auto;
+        color: #1a1a1a;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+    }
+    #benefits-title .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #benefits-title .cs-button-solid:hover {
+        color: #fff;
+    }
+    #benefits-title .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 81.25rem) {
+    #benefits-title {
+        background: url("https://cdn.clouds.pe/cloudspe/landing/depa-smart/Images/MISC/depasmart-04.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #benefits-title .cs-background img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 0rem) {
+    #benefits-group {
+        padding: 0 1em clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
+        position: relative;
+        z-index: 10;
+    }
+    #benefits-group .cs-card-group {
+        width: 100%;
+        max-width: 29.0625rem;
+        margin: 0 auto 0;
+        margin-top: calc(clamp(5rem, 13vw, 4.75rem) * -1);
+        padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
+        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 0.3125rem;
+        border-top: 8px solid var(--primary);
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    #benefits-group .cs-item {
+        list-style: none;
+        margin: 0 auto 2rem;
+        width: 100%;
+    }
+    #benefits-group .cs-item:last-of-type {
+        margin-bottom: 0;
+    }
+    #benefits-group .cs-icon {
+        width: clamp(4.25rem, 8.8vw, 5.5rem);
+        height: clamp(4.25rem, 8.8vw, 5.5rem);
+        margin: auto;
+        margin-bottom: clamp(1.25rem, 5vw, 1.5rem);
+        background: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #benefits-group .cs-icon img {
+        width: clamp(2.75rem, 5.8vw, 3.25rem);
+        height: auto;
+    }
+    #benefits-group .cs-title {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto 0.5rem;
+        color: var(--headerColor);
+    }
+    #benefits-group .cs-text {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5em;
+        max-width: 22.5rem;
+        margin: 0 auto;
+        color: var(--bodyTextColor);
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #benefits-group .cs-card-group {
+        max-width: 49rem;
+        margin-top: calc(clamp(4.75rem, 20vw, 20rem) * -1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 2.5rem;
+    }
+    #benefits-group .cs-item {
+        width: 45%;
+    }
+    #benefits-group .cs-item:last-of-type {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 81.25rem) {
+    #benefits-group .cs-card-group {
+        max-width: 80rem;
+        flex-wrap: nowrap;
+    }
+    #benefits-group .cs-item {
+        margin: 0;
+    }
+    #benefits-group .cs-item:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 0rem) {
+    #list-1186 {
+        width: 100%;
+        max-width: 39.375rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    #list-1186 .cs-li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: clamp(1rem, 2.5vw, 1.25rem);
+    }
+    #list-1186 .cs-li-picture {
+        width: clamp(3.75rem, 6vw, 5rem);
+        height: clamp(3.75rem, 6vw, 5rem);
+        margin: 0;
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+    }
+    #list-1186 .cs-li-icon {
+        width: clamp(1.5rem, 3vw, 2rem);
+        height: auto;
+        display: block;
+    }
+    #list-1186 .cs-h3 {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        margin: 0 0 0.75rem 0;
+        color: var(--headerColor);
+    }
+    #list-1186 .cs-li-text {
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: left;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #list-1186 .cs-flex {
+        margin-top: 1.5rem;
+    }
+}
+
+                                

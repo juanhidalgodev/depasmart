@@ -1,0 +1,227 @@
+@media only screen and (min-width: 0rem) {
+    #cs-footer {
+        padding: var(--sectionPadding);
+        padding-top: clamp(7.5rem, 15vw, 12.5rem);
+        position: relative;
+    }
+
+    #cs-footer .cs-container {
+        width: 100%;
+        max-width: 43.75rem;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    #cs-footer .cs-logo-group {
+        width: 100%;
+        position: relative;
+    }
+
+    #cs-footer .cs-logo {
+        width: 12.3125rem;
+        height: auto;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    #cs-footer .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+
+    #cs-footer .cs-logo-img.dark {
+        display: none;
+    }
+
+    #cs-footer .cs-text {
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        width: 78%;
+        max-width: 26.25rem;
+        color: var(--bodyTextColorWhite);
+    }
+
+    #cs-footer .cs-nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    #cs-footer .cs-nav-li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #cs-footer .cs-header {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+        display: block;
+    }
+
+    #cs-footer .cs-nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s;
+    }
+
+    #cs-footer .cs-nav-link:before {
+        content: "";
+        width: 0%;
+        height: 0.125rem;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+
+    #cs-footer .cs-nav-link:hover {
+        color: var(--secondary);
+    }
+
+    #cs-footer .cs-nav-link:hover:before {
+        width: 100%;
+    }
+
+    #cs-footer .cs-icon {
+        width: 1.5rem;
+        height: auto;
+        margin-right: 0.75rem;
+    }
+
+    #cs-footer .cs-bottom {
+        max-width: 80rem;
+        margin: auto;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #484848;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cs-footer .cs-copyright,
+    #cs-footer .cs-copyright-link {
+        font-size: 1rem;
+        line-height: 1.5em;
+        color: var(--bodyTextColorWhite);
+    }
+
+    #cs-footer .cs-copyright-link {
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    #cs-footer .cs-copyright-link:hover {
+        color: var(--secondary);
+    }
+
+    #cs-footer .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #cs-footer .cs-background:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: -moz-linear-gradient(left,
+                rgba(26, 26, 26, 0.94) 0%,
+                #1a1a1a 100%);
+        background: -webkit-linear-gradient(left,
+                rgba(26, 26, 26, 0.94) 0%,
+                #1a1a1a 100%);
+        background: linear-gradient(to right,
+                rgba(26, 26, 26, 0.94) 0%,
+                #1a1a1a 100%);
+        opacity: 0.97;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    #cs-footer .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #cs-footer .cs-graphic {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #cs-footer .cs-container {
+        row-gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 2.5rem;
+    }
+
+    #cs-footer .cs-nav {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    #cs-footer .cs-container {
+        max-width: 80rem;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        column-gap: 5.25rem;
+    }
+
+    #cs-footer .cs-logo-group {
+        width: 30%;
+        max-width: 24.1875rem;
+        margin-right: auto;
+    }
+
+    #cs-footer .cs-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 112.5rem) {
+    #cs-footer {
+        padding-top: 12vw;
+    }
+}

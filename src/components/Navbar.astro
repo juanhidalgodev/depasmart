@@ -1,0 +1,57 @@
+---
+import "../styles/navbar.css";
+---
+
+<header id="cs-navigation">
+  <div class="cs-container">
+    <a href="" class="cs-logo" aria-label="back to home">
+      <img
+        src="https://cdn.clouds.pe/cloudspe/landing/depa-smart/Logos/depasmart.png"
+        alt="logo"
+        width="210"
+        height="29"
+        aria-hidden="true"
+        decoding="async"
+      />
+    </a>
+    <nav class="cs-nav" role="navigation">
+      <button class="cs-toggle" aria-label="mobile menu toggle">
+        <div class="cs-box" aria-hidden="true">
+          <span class="cs-line cs-line1" aria-hidden="true"></span>
+          <span class="cs-line cs-line2" aria-hidden="true"></span>
+          <span class="cs-line cs-line3" aria-hidden="true"></span>
+        </div>
+      </button>
+      <div class="cs-ul-wrapper">
+        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+          <li class="cs-li">
+            <a href="/" class="cs-li-link cs-active"> HOME CARACTERISTICAS</a>
+          </li>
+          <li class="cs-li">
+            <a href="#benefits" class="cs-li-link"> AREAS COMUNES</a>
+          </li>
+          <li class="cs-li">
+            <a href="#contact" class="cs-li-link"> CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="cs-contact-group">
+      <a href="tel:+51993109680" class="cs-phone">
+        <img
+          class="cs-phone-icon"
+          src="https://cdn.clouds.pe/cloudspe/landing/depa-smart/Icons/phone.svg"
+          alt="logo"
+          width="24"
+          height="24"
+          aria-hidden="true"
+          decoding="async"
+        />
+        +51 993 109 680
+      </a>
+    </div>
+  </div>
+</header>
+<script>
+  import "../scripts/navbar.js";
+</script>

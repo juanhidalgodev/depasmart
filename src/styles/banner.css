@@ -1,0 +1,136 @@
+@media only screen and (min-width: 0rem) {
+  #banner {
+    padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
+    padding-bottom: clamp(8.125rem, 12.5vw, 10.9375rem);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #banner .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #banner .cs-content {
+    text-align: left;
+    width: 90%;
+    max-width: 34.0625rem;
+    margin-top: clamp(6.25rem, 28vw, 9.375rem);
+  }
+
+  #banner .cs-title {
+    font-size: clamp(2.4375rem, 6.7vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 clamp(1rem, 4vw, 2rem) 0;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+
+  #banner .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0 0 clamp(2.5rem, 6.3vw, 4rem);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #banner .cs-button-solid {
+    font-size: 1rem;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #1a1a1a;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--secondary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: color 0.3s;
+  }
+
+  #banner .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+
+  #banner .cs-button-solid:hover {
+    color: #fff;
+  }
+
+  #banner .cs-button-solid:hover:before {
+    width: 100%;
+  }
+
+  #banner .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #banner .cs-background:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 125rem;
+    width: 187.5rem;
+    background: rgba(12, 12, 12, 0.7);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    top: 70.3125rem;
+    left: 50%;
+    z-index: 1;
+    transform: rotate(30deg) translateX(-50%);
+  }
+
+  #banner .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #banner .cs-content {
+    width: 48%;
+    margin-top: 0rem;
+  }
+
+  #banner .cs-background:before {
+    top: 7.5rem;
+    margin-left: -127.1875rem;
+    transform: rotate(60deg);
+  }
+}
